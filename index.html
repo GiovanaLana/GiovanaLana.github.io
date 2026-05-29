@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feira do Livro – São José do Rio Preto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">📖</span>
+        <span class="logo-text">Feira do Livro <span>Rio Preto</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#programacao">Programação</a></li>
+        <li><a href="#turismo">Turismo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#como-chegar">Como Chegar</a></li>
+        <li><a href="#contato" class="nav-cta">Inscreva-se</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="floating-books">
+        <div class="book b1">📚</div>
+        <div class="book b2">📖</div>
+        <div class="book b3">✍️</div>
+        <div class="book b4">🎭</div>
+        <div class="book b5">🖊️</div>
+        <div class="book b6">📝</div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>✦ Evento Cultural ✦</span>
+      </div>
+      <h1 class="hero-title">
+        Feira do Livro<br />
+        <span class="hero-highlight">São José do Rio Preto</span>
+      </h1>
+      <p class="hero-subtitle">
+        O maior encontro literário do interior paulista.<br />
+        Cultura, conhecimento e turismo em um só destino.
+      </p>
+      <div class="hero-date-box">
+        <div class="date-item">
+          <span class="date-icon">📅</span>
+          <div>
+            <strong>Outubro 2025</strong>
+            <small>Datas a confirmar</small>
+          </div>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-item">
+          <span class="date-icon">📍</span>
+          <div>
+            <strong>Rio Preto Shopping</strong>
+            <small>Av. Brig. Faria Lima, 6363</small>
+          </div>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-item">
+          <span class="date-icon">🎟️</span>
+          <div>
+            <strong>Entrada Gratuita</strong>
+            <small>Para todos os públicos</small>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#programacao" class="btn btn-primary">Ver Programação</a>
+        <a href="#turismo" class="btn btn-outline">Explorar a Cidade</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para descobrir</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTADOR ======================== -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item" data-target="10">
+          <span class="counter-number" id="c1">0</span>
+          <span class="counter-plus">+</span>
+          <p>Dias de Evento</p>
+        </div>
+        <div class="counter-item" data-target="150">
+          <span class="counter-number" id="c2">0</span>
+          <span class="counter-plus">+</span>
+          <p>Autores Participantes</p>
+        </div>
+        <div class="counter-item" data-target="50">
+          <span class="counter-number" id="c3">0</span>
+          <span class="counter-plus">+</span>
+          <p>Editoras Presentes</p>
+        </div>
+        <div class="counter-item" data-target="30000">
+          <span class="counter-number" id="c4">0</span>
+          <span class="counter-plus">+</span>
+          <p>Visitantes Esperados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SOBRE ======================== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-image-col">
+          <div class="sobre-img-wrapper">
+            <img src="images/feira-livro.jpg" alt="Feira do Livro" class="sobre-img" />
+            <div class="sobre-badge-float">
+              <span>🏆</span>
+              <p>Evento<br/>Premiado</p>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-text-col">
+          <div class="section-tag">Sobre o Evento</div>
+          <h2 class="section-title">Uma Celebração<br />da Cultura e da Leitura</h2>
+          <p class="sobre-desc">
+            A <strong>Feira do Livro de São José do Rio Preto</strong> é um dos maiores eventos literários do interior do estado de São Paulo, reunindo autores nacionais e internacionais, editoras, livrarias e apaixonados por literatura em um espaço vibrante de troca cultural.
+          </p>
+          <p class="sobre-desc">
+            Organizada pela <strong>Academia Rio-pretense de Letras e Cultura (ARLEC)</strong>, a feira vai além da comercialização de livros: oferece rodas de conversa, lançamentos literários, oficinas criativas, intervenções artísticas e atividades especiais para crianças e adolescentes.
+          </p>
+          <div class="sobre-features">
+            <div class="feature-item">
+              <span class="feature-icon">📚</span>
+              <div>
+                <strong>Acervo Diversificado</strong>
+                <p>Milhares de títulos de todos os gêneros literários</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🎤</span>
+              <div>
+                <strong>Palestras e Bate-papos</strong>
+                <p>Encontros com autores renomados da literatura brasileira</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🎨</span>
+              <div>
+                <strong>Atividades Culturais</strong>
+                <p>Oficinas, exposições e intervenções artísticas gratuitas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROGRAMAÇÃO ======================== -->
+  <section class="programacao" id="programacao">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Programação</div>
+        <h2 class="section-title">O Que Esperar da Feira</h2>
+        <p class="section-subtitle">Uma semana repleta de atividades culturais para todas as idades</p>
+      </div>
+      <div class="prog-tabs">
+        <button class="tab-btn active" data-tab="infantil">Infantojuvenil</button>
+        <button class="tab-btn" data-tab="adulto">Adulto</button>
+        <button class="tab-btn" data-tab="especial">Especial</button>
+      </div>
+      <div class="prog-content">
+        <div class="tab-panel active" id="tab-infantil">
+          <div class="prog-grid">
+            <div class="prog-card">
+              <div class="prog-time">10h – 12h</div>
+              <div class="prog-icon">📖</div>
+              <h3>Hora do Conto</h3>
+              <p>Contação de histórias com autores infantis e personagens temáticos para crianças de 4 a 10 anos.</p>
+              <span class="prog-tag">Diário</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">14h – 16h</div>
+              <div class="prog-icon">🎨</div>
+              <h3>Oficina de Ilustração</h3>
+              <p>Aprenda a criar personagens e ilustrações com artistas e ilustradores de livros infantis.</p>
+              <span class="prog-tag">Ter / Qui / Sáb</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">16h – 17h30</div>
+              <div class="prog-icon">🎭</div>
+              <h3>Teatro Literário</h3>
+              <p>Peças teatrais baseadas em clássicos da literatura infantil brasileira e internacional.</p>
+              <span class="prog-tag">Fins de semana</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">Todo dia</div>
+              <div class="prog-icon">🖊️</div>
+              <h3>Autógrafos Infantis</h3>
+              <p>Sessões de autógrafos com autores como Pedro Bandeira, Ana Maria Machado e convidados especiais.</p>
+              <span class="prog-tag">Especial</span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-adulto">
+          <div class="prog-grid">
+            <div class="prog-card">
+              <div class="prog-time">19h – 21h</div>
+              <div class="prog-icon">🎤</div>
+              <h3>Noite de Autores</h3>
+              <p>Bate-papo com escritores nacionais sobre seus processos criativos, lançamentos e tendências literárias.</p>
+              <span class="prog-tag">Diário</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">15h – 17h</div>
+              <div class="prog-icon">📝</div>
+              <h3>Oficina de Escrita Criativa</h3>
+              <p>Desenvolva sua voz literária com exercícios práticos guiados por escritores experientes.</p>
+              <span class="prog-tag">Seg / Qua / Sex</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">18h – 19h30</div>
+              <div class="prog-icon">📚</div>
+              <h3>Clube do Livro ao Vivo</h3>
+              <p>Debate coletivo sobre obras selecionadas com mediação de críticos e professores de literatura.</p>
+              <span class="prog-tag">Ter / Qui</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">20h – 22h</div>
+              <div class="prog-icon">🏆</div>
+              <h3>Premiação Literária</h3>
+              <p>Cerimônia de entrega do Prêmio ARLEC de Literatura, reconhecendo talentos locais e regionais.</p>
+              <span class="prog-tag">Encerramento</span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-especial">
+          <div class="prog-grid">
+            <div class="prog-card">
+              <div class="prog-time">Abertura</div>
+              <div class="prog-icon">🎉</div>
+              <h3>Cerimônia de Abertura</h3>
+              <p>Solenidade oficial com autoridades, autores homenageados e apresentação cultural de abertura.</p>
+              <span class="prog-tag">1º dia</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">Todo dia</div>
+              <div class="prog-icon">📸</div>
+              <h3>Espaço Instagramável</h3>
+              <p>Cenários temáticos literários para fotos, inspirados em obras clássicas da literatura mundial.</p>
+              <span class="prog-tag">Permanente</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">Sábado</div>
+              <div class="prog-icon">🎓</div>
+              <h3>Doação de Livros</h3>
+              <p>Entrega de livros para alunos da rede pública municipal, perpetuando o amor pela leitura.</p>
+              <span class="prog-tag">Especial</span>
+            </div>
+            <div class="prog-card">
+              <div class="prog-time">Encerramento</div>
+              <div class="prog-icon">🌟</div>
+              <h3>Show de Encerramento</h3>
+              <p>Apresentação musical especial temática com artistas locais para celebrar o fim do evento.</p>
+              <span class="prog-tag">Último dia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TURISMO ======================== -->
+  <section class="turismo" id="turismo">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Turismo</div>
+        <h2 class="section-title">Explore São José do Rio Preto</h2>
+        <p class="section-subtitle">Aproveite a visita à Feira para conhecer os encantos da cidade</p>
+      </div>
+      <div class="turismo-grid">
+        <div class="turismo-card featured">
+          <div class="turismo-img-wrap">
+            <img src="images/represa-noite.jpg" alt="Parque da Represa Municipal" />
+            <div class="turismo-overlay">
+              <span class="turismo-category">Natureza & Lazer</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Parque da Represa Municipal</h3>
+            <p>Cartão-postal da cidade, com a segunda maior fonte luminosa musical do Brasil. Pista de caminhada, fauna silvestre e pôr do sol deslumbrante.</p>
+            <div class="turismo-meta">
+              <span>🕐 Aberto todos os dias</span>
+              <span>🆓 Entrada gratuita</span>
+            </div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img-wrap">
+            <div class="turismo-placeholder" style="background: linear-gradient(135deg, #2d6a4f, #52b788);">
+              <span>🦁</span>
+            </div>
+            <div class="turismo-overlay">
+              <span class="turismo-category">Fauna & Flora</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Zoológico Municipal</h3>
+            <p>Mais de 306 animais e 83 espécies em área de mata nativa. Um dos mais visitados da região, com 200 mil visitantes por ano.</p>
+            <div class="turismo-meta">
+              <span>🕐 Ter–Dom, 9h–17h</span>
+              <span>🆓 Gratuito</span>
+            </div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img-wrap">
+            <div class="turismo-placeholder" style="background: linear-gradient(135deg, #8b5e3c, #c9a96e);">
+              <span>🏛️</span>
+            </div>
+            <div class="turismo-overlay">
+              <span class="turismo-category">Cultura & História</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Teatro Municipal Paulo de Tarso</h3>
+            <p>Palco de grandes espetáculos e apresentações culturais, símbolo da vida artística da cidade desde sua inauguração.</p>
+            <div class="turismo-meta">
+              <span>🎭 Programação variada</span>
+              <span>📍 Centro</span>
+            </div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img-wrap">
+            <div class="turismo-placeholder" style="background: linear-gradient(135deg, #e76f51, #f4a261);">
+              <span>🛒</span>
+            </div>
+            <div class="turismo-overlay">
+              <span class="turismo-category">Gastronomia</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Mercado Municipal</h3>
+            <p>Inaugurado em 1944, é o coração gastronômico da cidade. Frutas, verduras, temperos, carnes e produtos regionais frescos.</p>
+            <div class="turismo-meta">
+              <span>🕐 Seg–Sáb, 6h–18h</span>
+              <span>📍 Centro histórico</span>
+            </div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img-wrap">
+            <div class="turismo-placeholder" style="background: linear-gradient(135deg, #457b9d, #1d3557);">
+              <span>🌳</span>
+            </div>
+            <div class="turismo-overlay">
+              <span class="turismo-category">Ecoturismo</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Parque Ecológico Danilo Santos</h3>
+            <p>Área de preservação ambiental com trilhas, fauna nativa e espaços de educação ambiental para toda a família.</p>
+            <div class="turismo-meta">
+              <span>🌿 Trilhas guiadas</span>
+              <span>🆓 Gratuito</span>
+            </div>
+          </div>
+        </div>
+        <div class="turismo-card">
+          <div class="turismo-img-wrap">
+            <div class="turismo-placeholder" style="background: linear-gradient(135deg, #6d6875, #b5838d);">
+              <span>🍽️</span>
+            </div>
+            <div class="turismo-overlay">
+              <span class="turismo-category">Gastronomia</span>
+            </div>
+          </div>
+          <div class="turismo-info">
+            <h3>Quintal Food Park</h3>
+            <p>O melhor da gastronomia artesanal reunida em um espaço descontraído com trailers criativos e ambiente ao ar livre.</p>
+            <div class="turismo-meta">
+              <span>🕐 Qui–Dom, 18h–23h</span>
+              <span>🍺 Drinks & Petiscos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GALERIA ======================== -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag light">Galeria</div>
+        <h2 class="section-title light">Momentos da Feira</h2>
+        <p class="section-subtitle light">Reviva a atmosfera única do maior evento literário de Rio Preto</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item g-large">
+          <img src="images/feira-livro.jpg" alt="Entrada da Feira do Livro" />
+          <div class="galeria-caption">Entrada principal da Feira do Livro</div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/represa-noite.jpg" alt="Represa Municipal à noite" />
+          <div class="galeria-caption">Represa Municipal iluminada</div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/represa-dia.jpg" alt="Parque da Represa" />
+          <div class="galeria-caption">Parque da Represa Municipal</div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/feira-livro2.webp" alt="Atividades na Feira" />
+          <div class="galeria-caption">Atividades culturais na Feira</div>
+        </div>
+        <div class="galeria-item">
+          <img src="images/represa-por-sol.jpg" alt="Pôr do sol na Represa" />
+          <div class="galeria-caption">Pôr do sol na Represa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== COMO CHEGAR ======================== -->
+  <section class="como-chegar" id="como-chegar">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Localização</div>
+        <h2 class="section-title">Como Chegar em Rio Preto</h2>
+        <p class="section-subtitle">São José do Rio Preto está a 452 km de São Paulo, bem conectada por rodovias e com aeroporto próprio</p>
+      </div>
+      <div class="chegar-grid">
+        <div class="chegar-card">
+          <div class="chegar-icon">✈️</div>
+          <h3>De Avião</h3>
+          <p>O <strong>Aeroporto de São José do Rio Preto (SJP)</strong> opera voos regulares de São Paulo (GRU/CGH), Campinas e outras cidades. Distância do aeroporto ao centro: 12 km.</p>
+          <a href="#" class="chegar-link">Ver companhias aéreas →</a>
+        </div>
+        <div class="chegar-card">
+          <div class="chegar-icon">🚗</div>
+          <h3>De Carro</h3>
+          <p>Acesso pela <strong>Rodovia Transbrasiliana (BR-153)</strong> ou pela <strong>SP-310 (Washington Luís)</strong>. De São Paulo, aproximadamente 5h30 de viagem.</p>
+          <a href="https://maps.google.com" target="_blank" class="chegar-link">Abrir no Google Maps →</a>
+        </div>
+        <div class="chegar-card">
+          <div class="chegar-icon">🚌</div>
+          <h3>De Ônibus</h3>
+          <p>Linhas regulares partem de São Paulo (Terminal Tietê), Campinas, Ribeirão Preto e outras cidades. Viagem confortável com empresas como Cometa e Util.</p>
+          <a href="#" class="chegar-link">Ver horários →</a>
+        </div>
+        <div class="chegar-card highlight">
+          <div class="chegar-icon">📍</div>
+          <h3>Local do Evento</h3>
+          <p><strong>Rio Preto Shopping Center</strong><br />Av. Brig. Faria Lima, 6363<br />Jardim Morumbi<br />São José do Rio Preto – SP<br />CEP: 15092-140</p>
+          <a href="https://goo.gl/maps/ET7GH" target="_blank" class="chegar-link">Ver no mapa →</a>
+        </div>
+      </div>
+      <div class="mapa-embed">
+        <div class="mapa-placeholder">
+          <span>🗺️</span>
+          <p>São José do Rio Preto – SP</p>
+          <small>Interior Paulista · Noroeste do Estado de São Paulo</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== NEWSLETTER / INSCRIÇÃO ======================== -->
+  <section class="newsletter" id="contato">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <div class="section-tag light">Fique por Dentro</div>
+          <h2>Receba a Programação Completa</h2>
+          <p>Cadastre-se e seja o primeiro a saber sobre autores confirmados, lançamentos exclusivos e atividades especiais da Feira do Livro de Rio Preto.</p>
+          <ul class="newsletter-benefits">
+            <li>✅ Programação completa antes de todos</li>
+            <li>✅ Alertas de lançamentos e autógrafos</li>
+            <li>✅ Dicas de hospedagem e turismo</li>
+            <li>✅ Descontos exclusivos em parceiros</li>
+          </ul>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="newsletter-form" id="newsletterForm">
+            <h3>Inscreva-se Gratuitamente</h3>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade de origem</label>
+              <input type="text" id="cidade" placeholder="De onde você vem?" />
+            </div>
+            <div class="form-group">
+              <label for="interesse">Interesse principal</label>
+              <select id="interesse">
+                <option value="">Selecione...</option>
+                <option value="literatura">Literatura Adulta</option>
+                <option value="infantil">Literatura Infantojuvenil</option>
+                <option value="turismo">Turismo & Hospedagem</option>
+                <option value="oficinas">Oficinas & Workshops</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              Quero me Inscrever!
+            </button>
+            <p class="form-disclaimer">Sem spam. Cancele quando quiser.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">🎉</div>
+            <h3>Inscrição Confirmada!</h3>
+            <p>Obrigado! Você receberá todas as novidades da Feira do Livro de Rio Preto em primeira mão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>📖</span>
+            <strong>Feira do Livro Rio Preto</strong>
+          </div>
+          <p>Promovendo a cultura, a leitura e o turismo em São José do Rio Preto desde 2024.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">👥</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Evento</h4>
+          <ul>
+            <li><a href="#sobre">Sobre a Feira</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Inscrição</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Turismo</h4>
+          <ul>
+            <li><a href="#turismo">Atrações da Cidade</a></li>
+            <li><a href="#como-chegar">Como Chegar</a></li>
+            <li><a href="#">Hospedagem</a></li>
+            <li><a href="#">Gastronomia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li>📧 arlecriopreto@gmail.com</li>
+            <li>📍 Rio Preto Shopping</li>
+            <li>🏙️ São José do Rio Preto – SP</li>
+            <li>📱 (17) 3216-9844</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Feira do Livro São José do Rio Preto · Realização: ARLEC · Apoio Cultural: Rio Preto Shopping</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img src="" alt="" id="lightboxImg" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
